@@ -36,7 +36,7 @@ import { defineComponent } from 'vue';
 import Flowchart from './components/Flowchart.vue'
 import Palette from './components/Palette.vue'
 import Controls from './components/Controls.vue'
-import {uuid} from "@jsplumb/util";
+import {uuid} from "@jsplumbtoolkit/browser-ui";
 
 export default defineComponent({
   name: 'App',
@@ -58,9 +58,9 @@ export default defineComponent({
 
 <style>
   @import "../node_modules/@jsplumbtoolkit/browser-ui/css/jsplumbtoolkit.css";
-  @import "../node_modules/@jsplumbtoolkit/dialogs-core/css/jsplumbtoolkit-dialogs.css";
+  @import "../node_modules/@jsplumbtoolkit/browser-ui/css/jsplumbtoolkit-dialogs.css";
   @import "../node_modules/@jsplumbtoolkit/browser-ui/css/jsplumbtoolkit-demo-support.css";
-  @import "../node_modules/@jsplumbtoolkit/connector-editors/css/jsplumbtoolkit-connector-editors.css";
+  @import "../node_modules/@jsplumbtoolkit/browser-ui/css/jsplumbtoolkit-connector-editors.css";
   @import "./assets/app.css";
 
 #app {

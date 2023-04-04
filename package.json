@@ -1,6 +1,6 @@
 {
     "name": "vue3-flowchart-builder",
-    "version": "5.8.0",
+    "version": "6.0.0",
     "private": true,
     "scripts": {
         "serve": "vue-cli-service serve",
@@ -8,15 +8,7 @@
         "lint": "vue-cli-service lint"
     },
     "dependencies": {
-        "@jsplumbtoolkit/browser-ui-plugin-drawing-tools": "^5.12.0",
-        "@jsplumbtoolkit/browser-ui-plugin-lasso": "^5.12.0",
-        "@jsplumbtoolkit/browser-ui-plugin-miniview": "^5.12.0",
-        "@jsplumbtoolkit/browser-ui-vue3": "^5.12.0",
-        "@jsplumbtoolkit/browser-ui-vue3-drop": "^5.12.0",
-        "@jsplumbtoolkit/connector-editors-orthogonal": "^5.12.0",
-        "@jsplumbtoolkit/connector-orthogonal": "^5.12.0",
-        "@jsplumbtoolkit/dialogs": "^5.12.0",
-        "@jsplumbtoolkit/layout-spring": "^5.12.0",
+        "@jsplumbtoolkit/browser-ui-vue3": "^6.0.0",
         "core-js": "^3.6.5",
         "vue": "^3.0.0"
     },

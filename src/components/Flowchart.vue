@@ -15,13 +15,15 @@
 <script>
 
     import { loadSurface  } from '@jsplumbtoolkit/browser-ui-vue3';
-    import { ArrowOverlay, BlankEndpoint, LabelOverlay, AnchorLocations, EVENT_CLICK, EVENT_TAP } from "@jsplumbtoolkit/browser-ui";
-    import { SpringLayout } from "@jsplumbtoolkit/layout-spring";
-    import { LassoPlugin } from "@jsplumbtoolkit/browser-ui-plugin-lasso";
-    import { DrawingToolsPlugin } from "@jsplumbtoolkit/browser-ui-plugin-drawing-tools";
-    import { EdgePathEditor } from '@jsplumbtoolkit/connector-editors';
-    import { OrthogonalConnector } from '@jsplumbtoolkit/connector-orthogonal';
-    import * as OrthogonalConnectorEditor from '@jsplumbtoolkit/connector-editors-orthogonal'
+    import {
+        ForceDirectedLayout,
+        LassoPlugin,
+        DrawingToolsPlugin,
+        EdgePathEditor,
+        OrthogonalConnector,
+        ArrowOverlay, BlankEndpoint,
+        LabelOverlay, AnchorLocations, EVENT_CLICK, EVENT_TAP
+    } from "@jsplumbtoolkit/browser-ui";
 
     import StartNode from './StartNode.vue'
     import ActionNode from './ActionNode.vue'
@@ -29,11 +31,6 @@
     import OutputNode from './OutputNode.vue'
 
     import { defineComponent } from "vue";
-
-    //
-    // This call is required in order for the edge editor to register itself with the Toolkit.
-    //
-    OrthogonalConnectorEditor.initialize();
 
     const TARGET = 'target';
     const SOURCE = 'source';
@@ -151,7 +148,7 @@
             renderParams:function() {
                 return {
                     layout:{
-                        type:SpringLayout.type
+                        type:ForceDirectedLayout.type
                     },
                     plugins: [
                         DrawingToolsPlugin.type,
